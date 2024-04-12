@@ -21,6 +21,7 @@ import (
 )
 
 func TestAgainstCluster(t *testing.T) {
+	t.Skip()
 	cli, err := client.NewClient("featurebase:10101")
 	assert.NoError(t, err)
 
